@@ -1,0 +1,174 @@
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: hsl(0, 100%, 95%);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.leftBox {
+  width: 60%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+  text-align: left;
+  padding: 0px 100px;
+}
+
+.rightBox {
+  width: 40%;
+  min-height: 100vh;
+  background-image: url("/hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+.heroImage {
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  padding-top: 50px;
+  padding-left: 100px;
+}
+
+.heading {
+  font-size: 4.5rem;
+  letter-spacing: 13px;
+}
+
+.headerStart {
+  font-weight: lighter;
+  color: hsl(0, 37%, 64%);
+}
+
+.headerEnd {
+  font-weight: bolder;
+}
+
+.description {
+  font-size: 1.3rem;
+  color: hsl(0, 37%, 64%);
+  display: block;
+  line-height: 1.5;
+  padding-right: 50px;
+}
+
+.imageContainer {
+  display: none;
+}
+
+.subscriptionContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  padding: 100px;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding-right: 50px;
+}
+
+.emailInput {
+  width: 100%;
+  height: 55px;
+  padding: 30px;
+  border-radius: 40px;
+  border: 1px solid hsl(0, 37%, 64%);
+  font-size: 16px;
+}
+
+.emailInput::placeholder {
+  color: hsl(0, 37%, 64%);
+}
+
+.submitButton {
+  width: 120px;
+  height: 62px;
+  background-color: hsl(0, 76%, 68%);
+  background-image: url("/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 40px;
+  margin-left: -80px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: hsl(0, 62%, 78%);
+}
+
+@media (max-width: 1200px) {
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+  }
+  .navbar {
+    padding: 30px;
+    justify-content: left;
+    text-align: left;
+    align-items: left;
+  }
+  .leftBox {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .rightBox {
+    display: none;
+  }
+  .imageContainer {
+    border: 1px solid;
+    width: 100%;
+    min-height: 50vh;
+    background-image: url("/hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+  }
+  .subscriptionContainer {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .heading {
+    width: min-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .description {
+    padding: 20px;
+    padding-top: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .inputContainer {
+    width: 85%;
+    padding: 0;
+    padding-bottom: 30px;
+  }
+}
